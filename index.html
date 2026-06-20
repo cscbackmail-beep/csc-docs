@@ -13,7 +13,6 @@
     color: #1a1a1a;
   }
 
-  /* HEADER */
   .header {
     position: sticky;
     top: 0;
@@ -26,7 +25,6 @@
   .header h1 {
     margin: 0;
     font-size: 16px;
-    font-weight: 600;
   }
 
   .header p {
@@ -35,27 +33,42 @@
     opacity: 0.85;
   }
 
-  /* CONTAINER */
   .container {
     max-width: 900px;
     margin: auto;
     padding: 14px;
   }
 
-  /* SECTION */
+  /* SEARCH BAR */
+  .search {
+    margin: 14px 0 6px;
+  }
+
+  .search input {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 14px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+  }
+
+  .search input:focus {
+    border-color: #0B2545;
+  }
+
   .section {
     margin-top: 18px;
   }
 
   .section h2 {
     font-size: 12px;
-    letter-spacing: 0.6px;
     text-transform: uppercase;
+    letter-spacing: 0.6px;
     color: #0B2545;
     margin-bottom: 10px;
   }
 
-  /* CARD */
   a.card {
     display: block;
     background: #fff;
@@ -66,34 +79,21 @@
     color: inherit;
     border: 1px solid #eee;
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
-    transition: 0.15s;
-  }
-
-  a.card:active {
-    transform: scale(0.98);
   }
 
   .title {
     font-size: 14px;
     font-weight: 600;
-    margin-bottom: 3px;
   }
 
   .sub {
     font-size: 12px;
     color: #666;
+    margin-top: 3px;
   }
 
-  /* MOBILE TWEAKS */
-  @media (max-width: 600px) {
-    .container {
-      padding: 12px;
-    }
-
-    a.card {
-      padding: 13px;
-      border-radius: 12px;
-    }
+  .hidden {
+    display: none !important;
   }
 </style>
 </head>
@@ -107,7 +107,12 @@
 
 <div class="container">
 
+  <div class="search">
+    <input type="text" id="searchBox" placeholder="Search documents..." onkeyup="filterDocs()">
+  </div>
+
   <div class="section">
+
     <h2>Financial</h2>
 
     <a class="card" href="01_Where_is_Members_Money_Going.html">
@@ -117,55 +122,59 @@
 
     <a class="card" href="02_Hired_with_No_Price.html">
       <div class="title">Hired with No Price</div>
-      <div class="sub">Procurement and contracting concerns</div>
+      <div class="sub">Procurement concerns</div>
     </a>
 
     <a class="card" href="03_Is_This_Even_a_Club_Expense.html">
       <div class="title">Is This Even a Club Expense</div>
-      <div class="sub">Questionable expenditure classification</div>
+      <div class="sub">Expense classification issues</div>
     </a>
+
   </div>
 
   <div class="section">
+
     <h2>Governance</h2>
 
     <a class="card" href="04_Conflict_of_Interest.html">
       <div class="title">Conflict of Interest</div>
-      <div class="sub">Governance integrity concerns</div>
+      <div class="sub">Governance integrity</div>
     </a>
 
     <a class="card" href="05_GC_Cannot_Override_the_Constitution.html">
       <div class="title">GC Cannot Override the Constitution</div>
-      <div class="sub">Authority and constitutional limits</div>
+      <div class="sub">Authority limits</div>
     </a>
 
     <a class="card" href="06_Trustees_Protection_May_Not_Hold.html">
       <div class="title">Trustees Protection May Not Hold</div>
-      <div class="sub">Legal and fiduciary considerations</div>
+      <div class="sub">Legal considerations</div>
     </a>
 
     <a class="card" href="07_Members_Right_to_See_Documents.html">
       <div class="title">Members’ Right to See Documents</div>
-      <div class="sub">Transparency and access rights</div>
+      <div class="sub">Transparency rights</div>
     </a>
 
     <a class="card" href="08_120_Members_Ignored.html">
       <div class="title">120 Members Ignored</div>
-      <div class="sub">Representation concerns</div>
+      <div class="sub">Representation failure</div>
     </a>
 
     <a class="card" href="09_Theft_and_False_Complaint.html">
       <div class="title">Theft and False Complaint</div>
-      <div class="sub">Governance dispute issues</div>
+      <div class="sub">Governance dispute</div>
     </a>
 
     <a class="card" href="10_Bypassing_Our_Appointed_Lawyers.html">
       <div class="title">Bypassing Appointed Lawyers</div>
-      <div class="sub">Procedural governance concerns</div>
+      <div class="sub">Procedural concerns</div>
     </a>
+
   </div>
 
   <div class="section">
+
     <h2>Membership</h2>
 
     <a class="card" href="11_What_Members_Should_Demand.html">
@@ -185,12 +194,28 @@
 
     <a class="card" href="15_Membership_Data.html">
       <div class="title">Membership Data</div>
-      <div class="sub">Membership structure overview</div>
+      <div class="sub">Membership structure</div>
     </a>
 
   </div>
 
 </div>
+
+<script>
+function filterDocs() {
+  const q = document.getElementById("searchBox").value.toLowerCase();
+  const cards = document.querySelectorAll(".card");
+
+  cards.forEach(card => {
+    const text = card.innerText.toLowerCase();
+    if (text.includes(q)) {
+      card.classList.remove("hidden");
+    } else {
+      card.classList.add("hidden");
+    }
+  });
+}
+</script>
 
 </body>
 </html>
