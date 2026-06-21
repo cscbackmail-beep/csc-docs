@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSC — Your Bill Was Sent. Just Not To You.</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #e8edf2; display: block; padding: 16px 0; margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; }
+.csc-wrap { width: 100%; max-width: 600px; margin: 0 auto; background: #0B2545; border-radius: 16px; overflow: visible; color: white; }
+.csc-header { background: #0B2545; padding: 28px 24px 20px; border-bottom: 3px solid #1A6DB5; }
+.csc-club-label { font-size: 11px; font-weight: 700; letter-spacing: 2.5px; color: #7BB8E8; text-transform: uppercase; margin-bottom: 10px; }
+.csc-headline { font-size: 24px; font-weight: 900; line-height: 1.2; color: #FFFFFF; }
+.csc-headline span { color: #F0A500; }
+.csc-body { background: #F4F7FB; padding: 20px 24px; }
+.csc-point { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid #DDE5EF; }
+.csc-point:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.csc-icon { width: 36px; height: 36px; border-radius: 50%; background: #0B2545; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+.csc-icon svg { width: 18px; height: 18px; stroke: #7BB8E8; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.csc-point-text { font-size: 14px; color: #1A2B45; line-height: 1.6; }
+.csc-point-text strong { color: #0B2545; font-weight: 700; }
+.csc-questions { background: #0B2545; padding: 18px 24px; border-top: 1px solid #1A6DB5; }
+.csc-questions-label { font-size: 10px; font-weight: 700; letter-spacing: 2px; color: #7BB8E8; text-transform: uppercase; margin-bottom: 14px; }
+.csc-q-item { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px solid #1A3A5C; }
+.csc-q-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.csc-q-x { color: #E03C3C; font-weight: 900; font-size: 14px; flex-shrink: 0; margin-top: 1px; }
+.csc-q-text { font-size: 13px; color: #7BB8E8; line-height: 1.55; }
+.csc-q-text strong { color: #FFFFFF; }
+.csc-result { background: #7A1A1A; padding: 20px 24px; border-top: 3px solid #E03C3C; font-size: 14px; font-weight: 600; color: #FFFFFF; line-height: 1.6; }
+.csc-result span { color: #FFB3B3; }
+.csc-footer { background: #091E3A; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; border-radius: 0 0 16px 16px; }
+.csc-tagline { font-size: 11px; font-weight: 700; color: #7BB8E8; letter-spacing: 0.5px; text-transform: uppercase; }
+.csc-tagline span { color: #F0A500; }
+.csc-logo { font-size: 11px; font-weight: 700; color: rgba(255,255,255,0.4); letter-spacing: 1px; text-align: right; text-transform: uppercase; }
+</style>
+</head>
+<body>
+<div class="csc-wrap">
+  <div class="csc-header">
+    <div class="csc-club-label">Colombo Swimming Club</div>
+    <div class="csc-headline">Your Bill Was Sent.<br><span>Just Not To You.</span></div>
+  </div>
+  <div class="csc-body">
+    <div class="csc-point">
+      <div class="csc-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+      <div class="csc-point-text">The club's own records show that <strong>62% of active members — 4,432 people — have incomplete contact information.</strong> Bills sent to incorrect addresses go undelivered. The member never knows. The club knows the data is wrong. <strong>No routine process exists to fix it before bills go out.</strong></div>
+    </div>
+    <div class="csc-point">
+      <div class="csc-icon"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+      <div class="csc-point-text">When a bill goes unpaid — whether received or not — a surcharge of <strong>10% per month</strong> is applied. At that rate, a missed bill <strong>nearly doubles in 7 months and triples within a year.</strong> The member remains unaware. The debt compounds — and keeps compounding.</div>
+    </div>
+    <div class="csc-point">
+      <div class="csc-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg></div>
+      <div class="csc-point-text">Once the debt crosses a threshold, <strong>membership is terminated.</strong> The deposit — held by the club as security against bills — is consumed by the compounded debt. The member loses both their membership and their money. <strong>For a bill they never received.</strong> A good member is lost to the club — permanently.</div>
+    </div>
+  </div>
+  <div class="csc-questions">
+    <div class="csc-questions-label">The questions the GC must answer</div>
+    <div class="csc-q-item">
+      <div class="csc-q-x">×</div>
+      <div class="csc-q-text"><strong>Is a 10% monthly surcharge rate fair?</strong> And does a rate this punishing give the club any incentive to maintain accurate contact data in the first place?</div>
+    </div>
+    <div class="csc-q-item">
+      <div class="csc-q-x">×</div>
+      <div class="csc-q-text"><strong>Were members with incorrect contact data</strong> proactively notified before surcharges were applied?</div>
+    </div>
+    <div class="csc-q-item">
+      <div class="csc-q-x">×</div>
+      <div class="csc-q-text"><strong>How many terminations resulted</strong> from undelivered bills — and how many deposits were retained against surcharge debts?</div>
+    </div>
+    <div class="csc-q-item">
+      <div class="csc-q-x">×</div>
+      <div class="csc-q-text"><strong>Why is there no monthly mid-cycle review</strong> of contact data accuracy before bills are issued? This is basic administration — not a complex fix.</div>
+    </div>
+  </div>
+  <div class="csc-result">A routine mid-month check of contact data before bills are issued would prevent this entirely. <span>No such process exists. Good members are being lost — and their deposits consumed — through a failure of basic administration that this GC has chosen not to fix.</span></div>
+  <div class="csc-footer">
+    <div class="csc-tagline">No Check. No Warning. <span>No Accountability.</span></div>
+    <div class="csc-logo">CSC<br>Members</div>
+  </div>
+</div>
+</body>
+</html>

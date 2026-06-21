@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSC — Membership Data</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #f5f5f0; display: block; padding: 16px; margin: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; color: #1a1a1a; font-size: 14px; line-height: 1.6; }
+
+h1 { font-size: 20px; font-weight: 700; color: #0B2545; margin-bottom: 4px; }
+.subtitle { font-size: 13px; color: #666; margin-bottom: 24px; }
+
+.section { margin-bottom: 28px; }
+.section-title { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #0B2545; padding-bottom: 6px; border-bottom: 2px solid #0B2545; margin-bottom: 12px; }
+
+.intro { font-size: 14px; color: #333; line-height: 1.65; margin-bottom: 12px; }
+.intro strong { color: #0B2545; }
+
+.table-wrap { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; margin-bottom: 4px; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+th { background: #0B2545; color: #7BB8E8; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; padding: 8px 10px; text-align: left; white-space: nowrap; }
+td { padding: 8px 10px; border-bottom: 1px solid #e5e5e0; color: #333; background: #fff; }
+tr:last-child td { border-bottom: none; }
+tr.total td { font-weight: 700; background: #f0f4f8; color: #0B2545; }
+tr.highlight td { background: #fff8f8; }
+td.neg { color: #c0392b; font-weight: 700; }
+td.pos { color: #27ae60; font-weight: 700; }
+td.warn { color: #e67e22; font-weight: 700; }
+td.row-head { font-weight: 600; color: #0B2545; background: #f0f4f8; white-space: nowrap; }
+
+.callout { border-left: 4px solid #F0A500; background: #fff; padding: 12px 14px; margin: 12px 0; border-radius: 0 8px 8px 0; font-size: 13px; color: #333; line-height: 1.65; }
+.callout strong { color: #0B2545; }
+.callout.red { border-color: #E03C3C; }
+.callout.blue { border-color: #1A6DB5; }
+
+.stat-row { display: flex; gap: 10px; margin: 12px 0; }
+.stat-box { flex: 1; background: #0B2545; border-radius: 8px; padding: 12px 10px; text-align: center; }
+.stat-num { font-size: 22px; font-weight: 900; color: #F0A500; line-height: 1; margin-bottom: 4px; }
+.stat-num.red { color: #E03C3C; }
+.stat-label { font-size: 10px; color: #7BB8E8; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; line-height: 1.3; }
+
+.source { font-size: 11px; color: #999; margin-top: 6px; font-style: italic; line-height: 1.5; }
+
+.q-list { background: #fff; border-radius: 10px; border: 1px solid #e5e5e0; overflow: hidden; }
+.q-item { display: flex; align-items: flex-start; gap: 10px; padding: 12px 14px; border-bottom: 1px solid #e5e5e0; font-size: 13px; color: #1A2B45; line-height: 1.6; }
+.q-item:last-child { border-bottom: none; }
+.q-x { color: #E03C3C; font-weight: 900; font-size: 14px; flex-shrink: 0; margin-top: 1px; }
+.q-item strong { color: #0B2545; }
+</style>
+</head>
+<body>
+
+<h1>CSC — Membership Data</h1>
+<p class="subtitle">What the membership database showed before and after the 2025 migration</p>
+
+<!-- SECTION 1 -->
+<div class="section">
+  <div class="section-title">1. The Headline Drop</div>
+
+  <p class="intro">A snapshot of the membership database taken just prior to the 2025 migration recorded <strong>5,090 active members.</strong> The President's communication of 20th May 2026 reported <strong>4,603 active members</strong> as at 16th April 2026 — a reduction of <strong>487 active members.</strong> No reconciliation report, no audit, and no explanation has been provided to the Membership.</p>
+
+  <div class="table-wrap">
+    <table>
+      <tr><th></th><th>Primary</th><th>Spouse</th><th>Juvenile</th><th>Total</th></tr>
+      <tr><td class="row-head">Pre-migration</td><td>2,597</td><td>1,074</td><td>1,419</td><td>5,090</td></tr>
+      <tr><td class="row-head">Apr 2026</td><td>2,285</td><td>1,503</td><td>815</td><td>4,603</td></tr>
+      <tr class="highlight"><td class="row-head">Change</td><td class="neg">-312</td><td class="pos">+429</td><td class="neg">-604</td><td class="neg">-487</td></tr>
+    </table>
+  </div>
+  <p class="source">Sources: Pre-migration snapshot, October 2025. Post-migration figures — President's communication to members, 20th May 2026.</p>
+
+  <div class="callout">
+    A migration that results in the loss of 487 active members requires a reconciliation — a line-by-line check of who was lost, why, and whether they should be restored. <strong>No such reconciliation has been disclosed to members.</strong>
+  </div>
+</div>
+
+<!-- SECTION 3 -->
+<div class="section">
+  <div class="section-title">2. The Juvenile Collapse</div>
+
+  <p class="intro">Juvenile members who turn 21 — or 23 if in full-time education — have a constitutional right to convert to full Primary membership at 25% of the entrance fee. The club's established process required proactive outreach to eligible juveniles at age 20. <strong>That process has stopped.</strong> The migration appears to have accelerated the loss.</p>
+
+  <div class="stat-row">
+    <div class="stat-box">
+      <div class="stat-num red">-604</div>
+      <div class="stat-label">Juvenile members lost since migration</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num">28</div>
+      <div class="stat-label">Conversions processed against 670 eligible</div>
+    </div>
+  </div>
+
+  <div class="callout red">
+    Of the 594 active juveniles over 21 in the pre-migration snapshot, <strong>489 are already over 23</strong> — past the maximum conversion age. They have lost their right permanently. Not through any fault of their own. <strong>Because the club stopped doing what it was supposed to do.</strong>
+  </div>
+</div>
+
+<!-- SECTION 4 -->
+<div class="section">
+  <div class="section-title">3. The Proposed Cap</div>
+
+  <p class="intro">The President's 20th May communication proposes that the General Committee put to the next General Meeting a cap on membership of <strong>approximately 2,500</strong> — against a post-migration active membership of <strong>4,603.</strong> That is a proposed reduction of over 2,100 further active members.</p>
+
+  <div class="stat-row">
+    <div class="stat-box">
+      <div class="stat-num red">2,100+</div>
+      <div class="stat-label">Active members at risk under proposed cap</div>
+    </div>
+    <div class="stat-box">
+      <div class="stat-num">Zero</div>
+      <div class="stat-label">Methodology disclosed to members</div>
+    </div>
+  </div>
+
+  <div class="callout blue">
+    No criteria have been published for how the cap would be applied — who stays, who goes, and who decides. <strong>Members have a right to know the methodology before any such proposal is put to a vote.</strong>
+  </div>
+</div>
+
+<!-- SECTION 5 -->
+<div class="section">
+  <div class="section-title">4. The Questions the GC Must Answer</div>
+  <div class="q-list">
+    <div class="q-item"><div class="q-x">×</div><div>Was a full <strong>reconciliation performed</strong> between pre and post-migration records? If so, where is the report?</div></div>
+    <div class="q-item"><div class="q-x">×</div><div>Were members lost in the migration <strong>identified and restored?</strong> Were they notified?</div></div>
+    <div class="q-item"><div class="q-x">×</div><div>Who <strong>signed off</strong> on the migration as complete and accurate?</div></div>
+    <div class="q-item"><div class="q-x">×</div><div>Why has <strong>no report been presented</strong> to members or at a General Meeting?</div></div>
+    <div class="q-item"><div class="q-x">×</div><div>How will the proposed <strong>cap of 2,500</strong> be applied — and who decides who stays and who goes?</div></div>
+    <div class="q-item"><div class="q-x">×</div><div>A migration and cleanup of this scale requires <strong>independent oversight</strong> — not unilateral action by the General Committee alone.</div></div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:#e8edf2;display:block;padding:16px 0;margin:0;}
+.csc-wrap{font-family:'Inter',sans-serif;background:#0B2545;width:100%;max-width:600px;margin:0 auto;border-radius:16px;color:white;}
+.csc-header{background:#0B2545;padding:28px 32px 20px;border-bottom:3px solid #1A6DB5;}
+.csc-club-label{font-size:11px;font-weight:700;letter-spacing:2.5px;color:#7BB8E8;text-transform:uppercase;margin-bottom:10px;}
+.csc-headline{font-size:26px;font-weight:900;line-height:1.2;color:#FFFFFF;}
+.csc-headline span{color:#E03C3C;}
+.csc-body{background:#F4F7FB;padding:24px 32px;}
+.csc-point{display:flex;align-items:flex-start;gap:14px;margin-bottom:16px;padding-bottom:16px;border-bottom:1px solid #DDE5EF;}
+.csc-point:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0;}
+.csc-icon{width:36px;height:36px;border-radius:50%;background:#0B2545;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;}
+.csc-icon svg{width:18px;height:18px;stroke:#7BB8E8;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+.csc-point-text{font-size:14.5px;color:#1A2B45;line-height:1.55;}
+.csc-point-text strong{color:#0B2545;font-weight:700;}
+.csc-point-text .red{color:#C0272D;font-weight:700;}
+.csc-numbers{background:#0B2545;padding:20px 32px;}
+.csc-numbers-label{font-size:10px;font-weight:700;letter-spacing:2px;color:#7BB8E8;text-transform:uppercase;margin-bottom:14px;}
+.csc-num-row{display:flex;align-items:stretch;gap:0;margin-bottom:10px;border-radius:8px;overflow:hidden;}
+.csc-num-val{background:#112D56;padding:12px 16px;min-width:110px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.csc-num-val span{font-size:22px;font-weight:900;color:#F0A500;}
+.csc-num-desc{background:#0F2645;padding:12px 14px;flex:1;display:flex;align-items:center;}
+.csc-num-desc p{font-size:12.5px;color:#A8C8E8;line-height:1.4;}
+.csc-num-row.red .csc-num-val span{color:#E03C3C;}
+.csc-num-row.red .csc-num-val{background:#3D0E0E;}
+.csc-num-row.red .csc-num-desc{background:#2A0A0A;}
+.csc-num-row.red .csc-num-desc p{color:#E08080;}
+.csc-divider{height:1px;background:#1A6DB5;margin:10px 0;}
+.csc-total-row{display:flex;align-items:center;gap:10px;padding-top:4px;}
+.csc-total-val{font-size:28px;font-weight:900;color:#E03C3C;white-space:nowrap;}
+.csc-total-desc{font-size:12px;color:#E08080;line-height:1.4;}
+.csc-closing{background:#7A1A1A;padding:20px 32px;border-top:3px solid #E03C3C;font-size:14.5px;font-weight:600;color:#FFFFFF;line-height:1.55;}
+.csc-closing span{color:#FFB3B3;}
+.csc-questions{background:#0B2545;padding:18px 32px 20px;border-top:1px solid #1A6DB5;}
+.csc-questions-label{font-size:10px;font-weight:700;letter-spacing:2px;color:#7BB8E8;text-transform:uppercase;margin-bottom:12px;}
+.csc-q-item{display:flex;align-items:flex-start;gap:10px;margin-bottom:10px;}
+.csc-q-item:last-child{margin-bottom:0;}
+.csc-q-x{color:#E03C3C;font-weight:900;font-size:15px;flex-shrink:0;margin-top:1px;}
+.csc-q-text{font-size:13px;color:#A8C8E8;line-height:1.5;}
+.csc-q-text strong{color:#FFFFFF;}
+.csc-footer{background:#091E3A;padding:14px 32px;display:flex;align-items:center;justify-content:space-between;border-radius:0 0 16px 16px;}
+.csc-tagline{font-size:12px;font-weight:700;color:#7BB8E8;letter-spacing:0.5px;text-transform:uppercase;}
+.csc-tagline span{color:#F0A500;}
+.csc-logo{font-size:11px;font-weight:700;color:rgba(255,255,255,0.4);letter-spacing:1px;text-align:right;text-transform:uppercase;}
+</style></head><body>
+<div class="csc-wrap">
+  <div class="csc-header">
+    <div class="csc-club-label">Colombo Swimming Club — Post 21</div>
+    <div class="csc-headline">487 Members Already Gone.<br><span>2,100 More at Risk. No Explanation Given.</span></div>
+  </div>
+  <div class="csc-body">
+    <div class="csc-point">
+      <div class="csc-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+      <div class="csc-point-text">Just before the 2025 database migration, CSC had <strong>5,090 active members.</strong> By April 2026 — per the VP/Finance Member's own communication to members dated 20 May 2026 — that figure had fallen to <strong>4,603.</strong> That is <span class="red">487 active members gone.</span> No reconciliation report. No audit. No communication to members explaining who was removed or why.</div>
+    </div>
+    <div class="csc-point">
+      <div class="csc-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div>
+      <div class="csc-point-text">The same communication now proposes a cap on active membership of <strong>approximately 2,500</strong> — to be put to the next General Meeting. There are currently 4,603 active members. That means <span class="red">a further 2,100 members</span> could be removed. More than one in three of you reading this. The communication discloses <strong>no methodology, no criteria, and no constitutional basis</strong> for how the cap would be applied.</div>
+    </div>
+    <div class="csc-point">
+      <div class="csc-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+      <div class="csc-point-text">The Constitution gives the General Committee <strong>no express authority</strong> to reduce the membership to a fixed number. Whatever is put to a vote at a General Meeting must come with a <strong>full, published methodology</strong> — who stays, who goes, on what criteria, and who decides. Members cannot be asked to vote on a bare number with no explanation.</div>
+    </div>
+  </div>
+  <div class="csc-numbers">
+    <div class="csc-numbers-label">The numbers — from CSC's own communications</div>
+    <div class="csc-num-row">
+      <div class="csc-num-val"><span>5,090</span></div>
+      <div class="csc-num-desc"><p>Active members — pre-migration snapshot, October 2025</p></div>
+    </div>
+    <div class="csc-num-row red">
+      <div class="csc-num-val"><span>4,603</span></div>
+      <div class="csc-num-desc"><p>Active members — post-migration, per VP/FM communication, April 2026. <strong>487 removed. No explanation.</strong></p></div>
+    </div>
+    <div class="csc-divider"></div>
+    <div class="csc-num-row red">
+      <div class="csc-num-val"><span>~2,500</span></div>
+      <div class="csc-num-desc"><p>Proposed cap — to be put to membership vote. No methodology disclosed.</p></div>
+    </div>
+    <div class="csc-divider"></div>
+    <div class="csc-total-row">
+      <div class="csc-total-val">2,590+</div>
+      <div class="csc-total-desc">Active members already removed or now at risk — from 5,090 down to a proposed 2,500. More than half the membership.</div>
+    </div>
+  </div>
+  <div class="csc-questions">
+    <div class="csc-questions-label">Members are entitled to ask</div>
+    <div class="csc-q-item">
+      <div class="csc-q-x">×</div>
+      <div class="csc-q-text">Who authorised the removal of <strong>487 members</strong> after the migration — and on what basis?</div>
+    </div>
+    <div class="csc-q-item">
+      <div class="csc-q-x">×</div>
+      <div class="csc-q-text">Were those 487 members <strong>notified</strong> that their status had changed?</div>
+    </div>
+    <div class="csc-q-item">
+      <div class="csc-q-x">×</div>
+      <div class="csc-q-text">What is the <strong>methodology</strong> for applying a cap of 2,500 — who stays, who goes, and who decides?</div>
+    </div>
+    <div class="csc-q-item">
+      <div class="csc-q-x">×</div>
+      <div class="csc-q-text">On what <strong>constitutional provision</strong> does the GC rely to bring such a proposal to a vote?</div>
+    </div>
+    <div class="csc-q-item">
+      <div class="csc-q-x">×</div>
+      <div class="csc-q-text">Members should not be asked to vote on a proposal that could <strong>terminate their own membership</strong> without full prior disclosure of the criteria and process.</div>
+    </div>
+  </div>
+  <div class="csc-closing">487 members were removed in silence. Now over 2,100 more face the same fate. <span>Members deserve answers before any vote is held.</span></div>
+  <div class="csc-footer">
+    <div class="csc-tagline">Your Membership. <span>Their Decision. No Explanation.</span></div>
+    <div class="csc-logo">CSC<br>Members</div>
+  </div>
+</div>
+</body></html>
