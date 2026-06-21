@@ -13,24 +13,24 @@ https://cscbackmail-beep.github.io/csc-docs/
 ## 📁 Document Index
 
 ### Financial
-- 01 Where is Members’ Money Going
-- 02 Hired with No Price
-- 03 Is This Even a Club Expense
+- Where is Members’ Money Going
+- Hired with No Price
+- Is This Even a Club Expense
 
 ### Governance
-- 04 Conflict of Interest
-- 05 GC Cannot Override the Constitution
-- 06 Trustees Protection May Not Hold
-- 07 Members’ Right to See Documents
-- 08 120 Members Ignored
-- 09 Theft and False Complaint
-- 10 Bypassing Appointed Lawyers
+- Conflict of Interest
+- GC Cannot Override the Constitution
+- Trustees Protection May Not Hold
+- Members’ Right to See Documents
+- 120 Members Ignored
+- Theft and False Complaint
+- Bypassing Appointed Lawyers
 
 ### Membership
-- 11 What Members Should Demand
-- 12 Is This the Governance You Want
-- 14 New Members
-- 15 Membership Data
+- What Members Should Demand
+- Is This the Governance You Want
+- New Members
+- Membership Data
 
 ---
 
